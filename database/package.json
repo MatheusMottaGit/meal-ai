@@ -11,6 +11,9 @@
     "build": "tsup src",
     "start": "node dist/server.js"
   },
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -18,6 +21,7 @@
     "@prisma/client": "^5.4.2",
     "@types/node": "^20.8.7",
     "prisma": "^5.4.2",
+    "ts-node": "^10.9.1",
     "tsup": "^7.2.0",
     "tsx": "^3.14.0",
     "typescript": "^5.2.2"
