@@ -11,9 +11,9 @@ datasource db {
 }
 
 model Meal {
-  id          String   @id @default(uuid())
+  id          String @id @default(uuid())
   description String
-  created_at  DateTime @default(now())
+  recepy      String
 }
 
 model Prompt {
