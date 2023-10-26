@@ -11,10 +11,11 @@ export async function saveCompletionRoute(app: FastifyInstance) {
 
     const { completion, ingredients } = bodySchema.parse(request.body)
 
-    // await prisma.meal.create({
-    //   data: {
-
-    //   }
-    // })
+    await prisma.meal.create({
+      data: {
+        description: ingredients,
+        recepy: completion
+      }
+    })
   })
 }
